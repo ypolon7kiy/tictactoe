@@ -48,7 +48,7 @@
 '`
 
 ## CURL GET GAME -> change gameId
-`curl --location --request GET 'http://0.0.0.0:8080/games/tictactoe?gameId=964be230-be2e-11ea-8feb-b584d70e4ec4' 
+`curl --location --request GET 'http://0.0.0.0:8080/games/tictactoe?gameId=??????????????????' 
 --header 'Content-Type: application/json' 
 --data-raw '{
     "firstPlayer": "a",
