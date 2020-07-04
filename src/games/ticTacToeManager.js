@@ -12,6 +12,7 @@ class TicTacToeGame {
         this.status = 'RUNNING'
         this.firstPlayer = firstPlayer
         this.secondPlayer = secondPlayer
+        this.isNextTurnFirstPlayer = true
 
         this.board = [[null, null, null],
             [null, null, null],
@@ -21,6 +22,9 @@ class TicTacToeGame {
     move(isFirstPlayer, x, y) {
         if (this.status !== 'RUNNING') {
             throw new Error(`Game : ${this.gameId} is not RUNNING.`)
+        }
+        if (this.isNextTurnFirstPlayer !== isFirstPlayer) {
+            throw new Error(`Next move should be : ${this.isNextTurnFirstPlayer ? this.firstPlayer: this.secondPlayer}.`)
         }
         if (x < 0 || x > 2 || y < 0 || y > 2) {
             throw new Error(`Bad indicies ${x}, ${y}`)
@@ -32,6 +36,7 @@ class TicTacToeGame {
         }
 
         this.board[x][y] = player
+        this.isNextTurnFirstPlayer = !this.isNextTurnFirstPlayer
 
         const winner = this.checkWinner(player)
         if (winner) {

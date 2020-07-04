@@ -30,7 +30,7 @@
 `curl --location --request PUT 'http://0.0.0.0:8080/games/tictactoe' 
 --header 'Content-Type: application/json' 
 --data-raw '{
-    "isFirstPlayer": true,
+    "isFirstPlayer": false,
     "x": 1,
     "y": 1,
     "gameId": "??????????????????"
