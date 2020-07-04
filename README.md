@@ -23,7 +23,7 @@
     "isFirstPlayer": true,
     "x": 0,
     "y": 0,
-    "gameId": "964be230-be2e-11ea-8feb-b584d70e4ec4"
+    "gameId": "??????????????????"
 }
 '`
 ## CURL PUT MOVE 2
@@ -33,7 +33,7 @@
     "isFirstPlayer": true,
     "x": 1,
     "y": 1,
-    "gameId": "964be230-be2e-11ea-8feb-b584d70e4ec4"
+    "gameId": "??????????????????"
 }
 '`
 ## CURL PUT MOVE 3
@@ -43,12 +43,12 @@
     "isFirstPlayer": true,
     "x": 2,
     "y": 2,
-    "gameId": "964be230-be2e-11ea-8feb-b584d70e4ec4"
+    "gameId": "??????????????????"
 }
 '`
 
 ## CURL GET GAME -> change gameId
-`curl --location --request GET 'http://0.0.0.0:8080/games/tictactoe?gameId=???????????????' 
+`curl --location --request GET 'http://0.0.0.0:8080/games/tictactoe?gameId=964be230-be2e-11ea-8feb-b584d70e4ec4' 
 --header 'Content-Type: application/json' 
 --data-raw '{
     "firstPlayer": "a",
