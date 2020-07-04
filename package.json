@@ -1,0 +1,33 @@
+{
+  "name": "app",
+  "description": "",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "NODE_PATH=$NODE_PATH:$(pwd) node index.js",
+    "test": "NODE_PATH=$NODE_PATH:$(pwd) DEBUG= nyc ./node_modules/mocha/bin/_mocha test/**/*.js"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "config": "^3.2.5",
+    "express": "^4.17.1",
+    "r": "0.0.5",
+    "uuid": "^8.2.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-exclude": "^2.0.2",
+    "deep-equal-in-any-order": "^1.0.21",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-chai-friendly": "^0.4.1",
+    "eslint-plugin-import": "^2.22.0",
+    "mocha": "^8.0.1",
+    "nyc": "^14.1.1"
+  },
+  "private": true
+}
