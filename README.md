@@ -1,3 +1,6 @@
+## INSTALL NODE MODULES
+`npm i`
+
 ## TESTS
 `npm run test`
 
